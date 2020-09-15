@@ -19,7 +19,7 @@ namespace Movie
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            
-              //修改入口函数的首出窗口
+            //修改入口函数的首出窗口
             Login f_login = new Login();
             if (f_login.ShowDialog() == DialogResult.OK)
             {

@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.账户ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.个人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
-            this.修改密码ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.切换账号ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出NToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -55,57 +52,29 @@
             this.退出NToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1023, 34);
+            this.menuStrip1.Size = new System.Drawing.Size(1023, 32);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 账户ToolStripMenuItem
             // 
             this.账户ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.个人信息ToolStripMenuItem,
-            this.修改密码ToolStripMenuItem,
-            this.修改密码ToolStripMenuItem1,
-            this.toolStripMenuItem1,
-            this.切换账号ToolStripMenuItem});
+            this.个人信息ToolStripMenuItem});
             this.账户ToolStripMenuItem.Name = "账户ToolStripMenuItem";
-            this.账户ToolStripMenuItem.Size = new System.Drawing.Size(123, 28);
+            this.账户ToolStripMenuItem.Size = new System.Drawing.Size(123, 32);
             this.账户ToolStripMenuItem.Text = "账户管理(&A)";
             // 
             // 个人信息ToolStripMenuItem
             // 
             this.个人信息ToolStripMenuItem.Name = "个人信息ToolStripMenuItem";
-            this.个人信息ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.个人信息ToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
             this.个人信息ToolStripMenuItem.Text = "个人信息";
             this.个人信息ToolStripMenuItem.Click += new System.EventHandler(this.个人信息ToolStripMenuItem_Click);
-            // 
-            // 修改密码ToolStripMenuItem
-            // 
-            this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(267, 6);
-            // 
-            // 修改密码ToolStripMenuItem1
-            // 
-            this.修改密码ToolStripMenuItem1.Name = "修改密码ToolStripMenuItem1";
-            this.修改密码ToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
-            this.修改密码ToolStripMenuItem1.Text = "修改密码";
-            this.修改密码ToolStripMenuItem1.Click += new System.EventHandler(this.修改密码ToolStripMenuItem1_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(267, 6);
-            // 
-            // 切换账号ToolStripMenuItem
-            // 
-            this.切换账号ToolStripMenuItem.Name = "切换账号ToolStripMenuItem";
-            this.切换账号ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.切换账号ToolStripMenuItem.Text = "切换账号";
-            this.切换账号ToolStripMenuItem.Click += new System.EventHandler(this.切换账号ToolStripMenuItem_Click);
             // 
             // 退出NToolStripMenuItem
             // 
             this.退出NToolStripMenuItem.Name = "退出NToolStripMenuItem";
-            this.退出NToolStripMenuItem.Size = new System.Drawing.Size(89, 28);
+            this.退出NToolStripMenuItem.Size = new System.Drawing.Size(89, 32);
             this.退出NToolStripMenuItem.Text = "退出(&N)";
             this.退出NToolStripMenuItem.Click += new System.EventHandler(this.退出NToolStripMenuItem_Click);
             // 
@@ -116,7 +85,7 @@
             this.toolStripLabel1,
             this.toolStripLabel2,
             this.toolStripLabel3});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 34);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 32);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.toolStrip1.Size = new System.Drawing.Size(1023, 29);
@@ -127,7 +96,7 @@
             // 
             this.toolStripLabel1.Image = global::Movie.Properties.Resources._2;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(145, 24);
+            this.toolStripLabel1.Size = new System.Drawing.Size(145, 33);
             this.toolStripLabel1.Text = "预订与查询(&c)";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
@@ -135,25 +104,25 @@
             // 
             this.toolStripLabel2.Image = global::Movie.Properties.Resources._2;
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(89, 24);
-            this.toolStripLabel2.Text = "退订(&t)";
+            this.toolStripLabel2.Size = new System.Drawing.Size(70, 33);
+            this.toolStripLabel2.Text = "订单";
             this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Image = global::Movie.Properties.Resources._2;
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(70, 24);
+            this.toolStripLabel3.Size = new System.Drawing.Size(70, 33);
             this.toolStripLabel3.Text = "购票";
             this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 63);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 61);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1023, 942);
+            this.panel1.Size = new System.Drawing.Size(1023, 944);
             this.panel1.TabIndex = 3;
             // 
             // MainWindow
@@ -164,12 +133,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1045, 1061);
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainWindow";
+            this.Text = "淘票票";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -190,10 +160,6 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.ToolStripMenuItem 个人信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator 修改密码ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 修改密码ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem 切换账号ToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
     }
 }

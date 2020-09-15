@@ -22,6 +22,7 @@ D:\ItProjects\H1C#窗体项目\项目文件\Movie\Movie\obj\Debug\Movie.Form1.re
 D:\ItProjects\H1C#窗体项目\项目文件\Movie\Movie\obj\Debug\Movie.Huanyin.resources
 D:\ItProjects\H1C#窗体项目\项目文件\Movie\Movie\obj\Debug\Movie.Login.resources
 D:\ItProjects\H1C#窗体项目\项目文件\Movie\Movie\obj\Debug\Movie.MainWindow.resources
+D:\ItProjects\H1C#窗体项目\项目文件\Movie\Movie\obj\Debug\Movie.PersonalCenter.resources
 D:\ItProjects\H1C#窗体项目\项目文件\Movie\Movie\obj\Debug\Movie.Properties.Resources.resources
 D:\ItProjects\H1C#窗体项目\项目文件\Movie\Movie\obj\Debug\Movie.Register.resources
 D:\ItProjects\H1C#窗体项目\项目文件\Movie\Movie\obj\Debug\Movie.State.resources

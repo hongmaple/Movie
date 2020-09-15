@@ -33,21 +33,19 @@ namespace Movie
         private void MainWindow_Load(object sender, EventArgs e)
         {
 
-           
-            //this.Refresh();
 
-             //加载皮肤文件
-          //  skinEngine1.SkinFile = System.Windows.Forms.Application.StartupPath +@"\Themes\DeepOrange.ssk";
-          //User.Text ="欢迎你："+ Program.username;
-          //User.Enabled = false;
+            /*this.Refresh();
+
+            //加载皮肤文件
+            skinEngine1.SkinFile = System.Windows.Forms.Application.StartupPath +@"\Themes\DeepOrange.ssk";
+            User.Text ="欢迎你："+ Program.username;
+            User.Enabled = false;*/
         }
-       
+
         private void toolStripLabel2_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
             State nn = new State();
-            //nn.MdiParent = this;
-            //nn.Parent = panel1;
             nn.TopLevel = false;
             this.panel1.Controls.Add(nn);
             nn.Show();
@@ -78,11 +76,8 @@ namespace Movie
         private void 个人信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //待写
-        }
-
-        private void 修改密码ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //代写
+            PersonalCenter personalCenter = new PersonalCenter();
+            personalCenter.Show();
         }
     }
 }

@@ -19,6 +19,16 @@ namespace Movie
             adaer.Fill(movie, tableName);
             return movie;
         }
+
+        public SqlDataReader reader(string sql)
+        {
+            SqlConnection con = new SqlConnection(open);
+            con.Open();
+            SqlCommand com = new SqlCommand(sql, con);
+            SqlDataReader reader = com.ExecuteReader(CommandBehavior.CloseConnection);
+            return reader;
+        }
+
         public int DonIntsdf(string sql) //用于执行增删改的方法
         {
             int rs = 0;

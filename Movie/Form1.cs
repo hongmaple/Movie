@@ -75,11 +75,11 @@ namespace Movie
         {
             string moiveid = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             string sql = @"SELECT [TicketId]
-                          ,[MovieName]
                           ,[MovieHouse]
-                          ,[StartTime]
                           ,[EndTime]
                           ,[TicketPrice]
+                          ,[MovieName]
+                          ,[StartTime]
                           ,[number]
                       FROM [movieDB].[dbo].[Movie],[movieDB].[dbo].[MovieHouse]
                       where TicketId='" + moiveid + "' and Movie.HouseID=MovieHouse.HouseID";
@@ -114,7 +114,10 @@ namespace Movie
                      VALUES ({0},'{1}','{2}','{3}')
                      ;UPDATE [movieDB].[dbo].[Movie] SET [number]=[number]-{4} WHERE TicketId='{5}'"
                           , orderId, moiveid, number, "已预订", number, moiveid);
-                    sdf = Convert.ToInt32(cc.DonIntsdf(sql));
+                    Convert.ToInt32(cc.DonIntsdf(sql));
+
+                    string sql2 = string.Format(@"INSERT INTO client_order([OrderId],[ClientId])  VALUES ('{0}','{1}')", orderId, Program.username);
+                    sdf = Convert.ToInt32(cc.DonIntsdf(sql2));
                     dindanbianh = dindanbianh + orderId;
                 }
                 if (sdf > 0)
